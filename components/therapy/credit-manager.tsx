@@ -3,22 +3,22 @@
 import { useState, useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { LitService } from "@/lib/services/lit.service";
+//import { LitService } from "@/lib/services/lit.service";
 import { Coins, TrendingUp, ArrowRightLeft } from "lucide-react";
-import { useAuth } from "@/lib/context/auth-context";
+import { useAuth } from "@/lib/contexts/auth-context";
 
 export function TherapyCreditManager() {
   const [credits, setCredits] = useState<number>(0);
   const [isOptimizing, setIsOptimizing] = useState(false);
-  const litService = LitService.getInstance();
+  //const litService = LitService.getInstance();
   const { user } = useAuth();
 
   const optimizeCredits = async () => {
-    if (!user?.wallet) return;
+    if (!user?.walletAddress) return;
 
     try {
       setIsOptimizing(true);
-      await litService.manageTherapyCredits(user.wallet);
+      //await litService.manageTherapyCredits(user.walletAddress);
       // Update credits display
     } catch (error) {
       console.error("Optimization error:", error);

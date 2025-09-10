@@ -47,21 +47,21 @@ export default function Home() {
 
   const welcomeSteps = [
     {
-      title: "Hi, I'm Aura 👋",
+      title: "Hi, I'm ManSathi 👋",
       description:
-        "Your AI companion for emotional well-being. I'm here to provide a safe, judgment-free space for you to express yourself.",
+        "Feeling stressed, anxious, or just need to talk? I’m your AI companion—here to listen and support you anytime, without judgment.",
       icon: Waves,
     },
     {
-      title: "Personalized Support 🌱",
+      title: "Calm Corner 🌸",
       description:
-        "I adapt to your needs and emotional state, offering evidence-based techniques and gentle guidance when you need it most.",
+        "I’m here to match your mood and support you, offering gentle guidance and proven techniques whenever you need a little boost.",
       icon: Brain,
     },
     {
-      title: "Your Privacy Matters 🛡️",
+      title: "Confidential & Secure 🤝",
       description:
-        "Our conversations are completely private and secure. I follow strict ethical guidelines and respect your boundaries.",
+        "A safe space where your feelings matter.",
       icon: Shield,
     },
   ];
@@ -76,29 +76,29 @@ export default function Home() {
   const features = [
     {
       icon: HeartPulse,
-      title: "24/7 Support",
-      description: "Always here to listen and support you, any time of day",
+      title: "Day or night, I’ve got you",
+      description: "Here to listen whenever you need, day or night.",
       color: "from-rose-500/20",
       delay: 0.2,
     },
     {
       icon: Lightbulb,
-      title: "Smart Insights",
-      description: "Personalized guidance powered by emotional intelligence",
+      title: "Thought Guide",
+      description: "Tailored support guided by your emotions",
       color: "from-amber-500/20",
       delay: 0.4,
     },
     {
       icon: Lock,
-      title: "Private & Secure",
-      description: "Your conversations are always confidential and encrypted",
+      title: "Safe & Confidential",
+      description: "All your chats remain private and fully encrypted.",
       color: "from-emerald-500/20",
       delay: 0.6,
     },
     {
       icon: MessageSquareHeart,
-      title: "Evidence-Based",
-      description: "Therapeutic techniques backed by clinical research",
+      title: "Research-Backed",
+      description: "Healing methods supported by science",
       color: "from-blue-500/20",
       delay: 0.8,
     },
@@ -129,25 +129,24 @@ export default function Home() {
           <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm border border-primary/20 bg-primary/5 backdrop-blur-sm hover:border-primary/40 transition-all duration-300">
             <Waves className="w-4 h-4 animate-wave text-primary" />
             <span className="relative text-foreground/90 dark:text-foreground after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-primary/30 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-              Your AI Agent Mental Health Companion
+              Your AI Friend for Mental Wellness
             </span>
           </div>
 
           {/* Enhanced main heading with smoother gradient */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-plus-jakarta tracking-tight">
             <span className="inline-block bg-gradient-to-r from-primary via-primary/90 to-secondary bg-clip-text text-transparent [text-shadow:_0_1px_0_rgb(0_0_0_/_20%)] hover:to-primary transition-all duration-300">
-              Find Peace
+              Explore Peacefulness
             </span>
             <br />
             <span className="inline-block mt-2 bg-gradient-to-b from-foreground to-foreground/90 bg-clip-text text-transparent">
-              of Mind
+              Inside Your Mind
             </span>
           </h1>
 
           {/* Enhanced description with better readability */}
           <p className="max-w-[600px] mx-auto text-base md:text-lg text-muted-foreground leading-relaxed tracking-wide">
-            Experience a new way of emotional support. Our AI companion is here
-            to listen, understand, and guide you through life's journey.
+           Discover a fresh approach to emotional care. Your AI companion listens, understands, and gently guides you through life’s ups and downs.
           </p>
 
           {/* Emotion slider section with enhanced transitions */}
@@ -159,7 +158,7 @@ export default function Home() {
           >
             <div className="space-y-2 text-center">
               <p className="text-sm text-muted-foreground/80 font-medium">
-                Whatever you're feeling, we're here to listen
+                No matter what’s on your mind, we’re here to listen.
               </p>
               <div className="flex justify-between items-center px-2">
                 {emotions.map((em) => (
@@ -200,7 +199,7 @@ export default function Home() {
 
             <div className="text-center">
               <p className="text-sm text-muted-foreground animate-pulse">
-                Slide to express how you're feeling today
+                Slide to share how you feel today.
               </p>
             </div>
           </motion.div>
@@ -215,10 +214,10 @@ export default function Home() {
             <Button
               size="lg"
               onClick={() => setShowDialog(true)}
-              className="relative group h-12 px-8 rounded-full bg-gradient-to-r from-primary via-primary/90 to-secondary hover:to-primary shadow-lg shadow-primary/20 transition-all duration-500 hover:shadow-xl hover:shadow-primary/30"
+              className="relative text-black  group h-12 px-8 rounded-full bg-gradient-to-r from-primary via-primary/90 to-secondary hover:to-primary shadow-lg shadow-primary/20 transition-all duration-500 hover:shadow-xl hover:shadow-primary/30"
             >
               <span className="relative z-10 font-medium flex items-center gap-2">
-                Begin Your Journey
+                Start Your Journey
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </span>
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-size-200 bg-pos-0 group-hover:bg-pos-100" />
@@ -246,11 +245,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <motion.div className="text-center mb-16 space-y-4 text-white ">
             <h2 className="text-3xl font-bold bg-gradient-to-r from-primary/90 to-primary bg-clip-text text-transparent dark:text-primary/90">
-              How Aura Helps You
+              How ManSathi Helps You
             </h2>
             <p className="text-foreground dark:text-foreground/95 max-w-2xl mx-auto font-medium text-lg">
-              Experience a new kind of emotional support, powered by empathetic
-              AI
+              Discover a fresh approach to emotional care, guided by understanding AI
             </p>
           </motion.div>
 

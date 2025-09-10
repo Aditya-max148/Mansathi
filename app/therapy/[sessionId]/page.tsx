@@ -834,7 +834,7 @@ export default function TherapyPage() {
                   )}
                   disabled={isTyping || isChatPaused || !message.trim()}
                 >
-                  <Send className="w-4 h-4" />
+                  <Send className="w-4 text-black h-4" />
                 </Button>
               </div>
             </form>

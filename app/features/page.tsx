@@ -110,7 +110,7 @@ export default function FeaturesPage() {
         </p>
         <a
           href="/dashboard"
-          className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+          className="inline-flex text-black  items-center px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
         >
           Start Your Wellness Journey
           <Heart className="ml-2 w-5 h-5" />

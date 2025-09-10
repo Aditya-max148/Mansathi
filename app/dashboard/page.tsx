@@ -846,10 +846,10 @@ export default function Dashboard() {
                           <MessageSquare className="w-4 h-4 text-white" />
                         </div>
                         <div className="text-left">
-                          <div className="font-semibold text-white">
+                          <div className="font-semibold text-black">
                             Begin your healing journey
                           </div>
-                          <div className="text-xs text-white/80">
+                          <div className="text-xs text-black/80">
                             Begin a fresh wellness session
                           </div>
                         </div>
@@ -1040,7 +1040,7 @@ export default function Dashboard() {
                     {/* Right side - Button */}
                     <div className="shrink-0">
                       <Button
-
+                          className="text-black"
                         disabled
                       >
                         Join

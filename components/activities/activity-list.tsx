@@ -39,7 +39,7 @@ export function ActivityList({
   if (!activities.length) {
     return (
       <div className="text-center py-8 text-muted-foreground">
-        No activities scheduled for today
+        Today looks clear—no activities scheduled.
       </div>
     );
   }

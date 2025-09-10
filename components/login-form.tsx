@@ -53,7 +53,7 @@ export function LoginForm() {
           Don&apos;t have an account?{" "}
           <Button
             variant="link"
-            className="p-0 text-foreground font-medium hover:text-foreground/80 transition-colors"
+            className="p-0 text-foreground text-black font-medium hover:text-foreground/80 transition-colors"
           >
             Sign up
           </Button>

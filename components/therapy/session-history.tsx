@@ -62,7 +62,7 @@ export function SessionHistory({ onNewSession }: SessionHistoryProps) {
     try {
       setIsLoading(true);
       console.log("Loading sessions for user:", user?.id);
-      const dbSessions = await getAllTherapySessions(user!.id);
+      const dbSessions = await getAllTherapySessions(user!.id || "None");
       console.log("Received sessions:", dbSessions);
 
       // Transform and sort sessions by most recent first
@@ -73,7 +73,6 @@ export function SessionHistory({ onNewSession }: SessionHistoryProps) {
           status: session.status,
           scheduledTime: new Date(session.scheduledTime),
           summary: session.summary,
-          title: session.title,
           isActive: session.id === params.sessionId,
         }))
         .sort((a, b) => b.scheduledTime.getTime() - a.scheduledTime.getTime());
@@ -205,10 +204,10 @@ export function SessionHistory({ onNewSession }: SessionHistoryProps) {
 
         <Button
           variant="default"
-          className="w-full justify-start gap-2 bg-primary/90 hover:bg-primary"
+          className="w-full text-black justify-start gap-2 bg-primary/90 hover:bg-primary"
           onClick={handleNewSession}
         >
-          <MessageSquare className="w-4 h-4" />
+          <MessageSquare className="w-4 text-black h-4" />
           New Session
         </Button>
 
@@ -229,7 +228,7 @@ export function SessionHistory({ onNewSession }: SessionHistoryProps) {
               variant={filter === f ? "default" : "ghost"}
               size="sm"
               onClick={() => setFilter(f as typeof filter)}
-              className="flex-1 capitalize"
+              className="flex-1 text-green-700 capitalize"
             >
               {f}
             </Button>

@@ -24,12 +24,12 @@ import { createActivity } from "@/lib/db/actions";
 import { useAuth } from "@/lib/contexts/auth-context";
 
 const activityTypes = [
-  { id: "meditation", name: "Meditation" },
-  { id: "exercise", name: "Exercise" },
-  { id: "walking", name: "Walking" },
-  { id: "reading", name: "Reading" },
-  { id: "journaling", name: "Journaling" },
-  { id: "therapy", name: "Therapy Session" },
+ { id: "meditation", name: "Calm Your Mind" },
+{ id: "exercise", name: "Move Your Body" },
+{ id: "walking", name: "Stroll Outdoors" },
+{ id: "reading", name: "Explore New Ideas" },
+{ id: "journaling", name: "Write Your Thoughts" },
+{ id: "therapy", name: "Talk It Out" },
 ];
 
 interface ActivityLoggerProps {
@@ -83,7 +83,7 @@ export function ActivityLogger({
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Log Activity</DialogTitle>
-          <DialogDescription>Record your wellness activity</DialogDescription>
+          <DialogDescription>Track your healthy habits</DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">

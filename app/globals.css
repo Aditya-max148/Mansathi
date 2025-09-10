@@ -15,9 +15,9 @@
     --popover-foreground: 200 8% 24%;
 
     /* Soft sage green as primary */
-    --primary: 210 30% 60%;
+    --primary: 180	100%	50%;
     /* soft muted blue */
-    --primary-foreground: 210 40% 16%;
+    --primary-foreground: 180	100%	50%;
     /* dark blue */
 
 
@@ -56,9 +56,9 @@
     --popover-foreground: 210 20% 98%;
 
     /* Soft sage in dark mode */
-    --primary: 210 30% 60%;
+    --primary: 180	100%	50%;
     /* soft muted blue */
-    --primary-foreground: 210 40% 16%;
+    --primary-foreground: 180	100%	50%;
     /* dark blue */
 
 

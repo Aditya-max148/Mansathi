@@ -23,7 +23,7 @@ export function Header() {
 
   const navItems = [
     { href: "/features", label: "Features" },
-    { href: "/about", label: "About Aura" },
+    { href: "/about", label: "About ManSathi" },
   ];
 
   return (
@@ -38,10 +38,10 @@ export function Header() {
             <AudioWaveform className="h-7 w-7 text-primary animate-pulse-gentle" />
             <div className="flex flex-col">
               <span className="font-semibold text-lg bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                Aura3.0
+                Mansathi 1.0
               </span>
               <span className="text-xs dark:text-muted-foreground">
-                sonic DeFAI hackathon
+                AI Innovation Challenge
               </span>
             </div>
           </Link>
@@ -67,11 +67,11 @@ export function Header() {
                 <>
                   <Button
                     asChild
-                    className="hidden md:flex gap-2 bg-primary/90 hover:bg-primary"
+                    className="hidden text-black  md:flex gap-2 bg-primary/90 hover:bg-primary"
                   >
                     <Link href="/dashboard">
                       <MessageCircle className="w-4 h-4 mr-1" />
-                      Start Chat
+                      Talk with Us
                     </Link>
                   </Button>
                   <Button
@@ -119,11 +119,11 @@ export function Header() {
               ))}
               <Button
                 asChild
-                className="mt-2 mx-4 gap-2 bg-primary/90 hover:bg-primary"
+                className="mt-2 mx-4 gap-2 text-black  bg-primary/90 hover:bg-primary"
               >
                 <Link href="/chat">
                   <MessageCircle className="w-4 h-4" />
-                  <span>Start Chat</span>
+                  <span>Talk with Us</span>
                 </Link>
               </Button>
             </nav>

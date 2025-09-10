@@ -25,8 +25,8 @@ import { OceanWaves } from "./ocean-waves";
 const games = [
   {
     id: "breathing",
-    title: "Breathing Patterns",
-    description: "Follow calming breathing exercises with visual guidance",
+    title: "Guided Breathing Sessions",
+    description: "Breathe calmly using guided visual exercises.",
     icon: Wind,
     color: "text-blue-500",
     bgColor: "bg-blue-500/10",
@@ -34,8 +34,8 @@ const games = [
   },
   {
     id: "garden",
-    title: "Zen Garden",
-    description: "Create and maintain your digital peaceful space",
+    title: "Inner Peace Garden",
+    description: "Build your own calming digital sanctuary.",
     icon: Flower2,
     color: "text-rose-500",
     bgColor: "bg-rose-500/10",
@@ -43,8 +43,8 @@ const games = [
   },
   {
     id: "forest",
-    title: "Mindful Forest",
-    description: "Take a peaceful walk through a virtual forest",
+    title: "Peaceful Forest",
+    description: "Enjoy a relaxing walk in a digital forest escape",
     icon: TreePine,
     color: "text-green-500",
     bgColor: "bg-green-500/10",
@@ -52,8 +52,8 @@ const games = [
   },
   {
     id: "waves",
-    title: "Ocean Waves",
-    description: "Match your breath with gentle ocean waves",
+    title: "Peaceful Sea Rhythms",
+    description: "Breathe calmly, like the gentle rise and fall of ocean waves.",
     icon: Waves,
     color: "text-cyan-500",
     bgColor: "bg-cyan-500/10",
@@ -107,10 +107,10 @@ export const AnxietyGames = ({ onGamePlayed }: AnxietyGamesProps) => {
         <CardHeader>
           <CardTitle className="text-xl font-semibold flex items-center gap-2">
             <Gamepad2 className="h-5 w-5 text-primary" />
-            Anxiety Relief Activities
+            Calming Activities for Anxiety
           </CardTitle>
           <CardDescription>
-            Interactive exercises to help reduce stress and anxiety
+            Engaging activities designed to ease stress and anxiety.
           </CardDescription>
         </CardHeader>
         <CardContent>
